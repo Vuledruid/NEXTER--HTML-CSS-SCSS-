@@ -1,0 +1,122 @@
+.header {
+    background-color: $color-grey-dark-1;
+    grid-column: full-start / col-end 6;
+    background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), 
+    url(../img/hero.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 8rem;
+    padding-top: 4rem;
+    display: grid;
+    grid-template-rows: 1fr min-content 6rem 1fr;
+    grid-template-columns: max-content;
+    grid-row-gap: 2rem;
+justify-content: center;
+
+
+@media only screen and (max-width: 600px ) {
+    grid-column: sidebar-start / full-end;
+
+}
+
+@media only screen and (max-width: 700px ) {
+    grid-column: sidebar-start / full-end;
+}
+
+
+@media only screen and (max-width: 1000px ) {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 2rem;
+    grid-row-gap: 7rem;
+
+}
+
+
+    &__logo {
+        height: 3rem;
+        justify-self: center;
+
+
+@media only screen and (max-width: 1000px ) {
+    margin-bottom: auto;
+    margin-top: 3rem;
+}
+
+    }
+
+    &__seenon-text {
+        display: grid;
+       grid-template-columns: 1fr max-content 1fr;
+        font-size: 1.6rem;
+        color: $color-grey-light-2;
+        grid-column-gap: 1.5rem;
+        align-items: center;
+
+@media only screen and (max-width: 1000px ) {
+
+    display: none;
+}
+
+        &::after,
+        &::before {
+            content: "";
+            height: 1px;
+            display: block;
+            background-color: currentColor;
+        }
+
+ 
+        }
+
+      
+    
+    }
+
+
+  
+    .header__seenon-logo {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 3rem;
+        justify-items: center;
+        img {
+            height: 2.5rem;
+            filter: brightness(70%);
+
+            @media only screen and (max-width: 600px ) {
+
+                height: 2rem;
+            }
+        }
+
+        @media only screen and (max-width: 1000px ) {
+
+            padding-bottom: 3rem;
+        }
+
+      
+        }
+        
+
+    
+
+    .btn {
+        align-self: start;
+        justify-self: start;
+        position: relative;
+
+@media only screen and (max-width: 1000px ) {
+
+    margin: 0 auto;
+    margin-bottom: auto;
+}
+
+
+    }
+
+   
+
+    
